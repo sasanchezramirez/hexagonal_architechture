@@ -1,15 +1,16 @@
 package com.hexagonal.tasks.domain.models;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Task {
     private Long id;
     private String title;
     private String description;
-    private LocalDate creationTime;
+    private LocalDateTime creationTime;
     private Boolean completed;
 
-    public Task(Long id, String title, String description, LocalDate creationTime, Boolean completed){
+    public Task(Long id, String title, String description, LocalDateTime creationTime, Boolean completed){
         this.id = id;
         this.title = title;
         this.description = description;
@@ -41,11 +42,11 @@ public class Task {
         this.description = description;
     }
 
-    public LocalDate getCreationTime() {
+    public LocalDateTime getCreationTime() {
         return creationTime;
     }
 
-    public void setCreationTime(LocalDate creationTime) {
+    public void setCreationTime(LocalDateTime creationTime) {
         this.creationTime = creationTime;
     }
 
