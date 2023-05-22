@@ -7,14 +7,14 @@ import com.hexagonal.tasks.domain.ports.in.*;
 import java.util.List;
 import java.util.Optional;
 
-public class taskService implements CreateTaskUseCase, DeleteTaskUseCase, GetAdditionalTaskInformationUseCase, RetrieveTaskUseCase, UpdateTaskUseCase {
+public class TaskService implements CreateTaskUseCase, DeleteTaskUseCase, GetAdditionalTaskInformationUseCase, RetrieveTaskUseCase, UpdateTaskUseCase {
 
     private final  CreateTaskUseCase createTaskUseCase;
     private final DeleteTaskUseCase deleteTaskUseCase;
     private final GetAdditionalTaskInformationUseCase getAdditionalTaskInformationUseCase;
     private final RetrieveTaskUseCase retrieveTaskUseCase;
     private final UpdateTaskUseCase updateTaskUseCase;
-    public taskService(CreateTaskUseCase createTaskUseCase, DeleteTaskUseCase deleteTaskUseCase, GetAdditionalTaskInformationUseCase getAdditionalTaskInformationUseCase, RetrieveTaskUseCase retrieveTaskUseCase, UpdateTaskUseCase updateTaskUseCase) {
+    public TaskService(CreateTaskUseCase createTaskUseCase, DeleteTaskUseCase deleteTaskUseCase, GetAdditionalTaskInformationUseCase getAdditionalTaskInformationUseCase, RetrieveTaskUseCase retrieveTaskUseCase, UpdateTaskUseCase updateTaskUseCase) {
         this.createTaskUseCase = createTaskUseCase;
         this.deleteTaskUseCase = deleteTaskUseCase;
         this.getAdditionalTaskInformationUseCase = getAdditionalTaskInformationUseCase;

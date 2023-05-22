@@ -6,7 +6,7 @@ import com.hexagonal.tasks.domain.ports.out.ExternalServicePort;
 import com.hexagonal.tasks.domain.ports.out.TaskRepositoryPort;
 
 public class GetAdditionalTaskInformationUseCaseImpl implements GetAdditionalTaskInformationUseCase {
-    public GetAdditionalTaskInformationUseCaseImpl(TaskRepositoryPort taskRepositoryPort, ExternalServicePort externalServicePort) {
+    public GetAdditionalTaskInformationUseCaseImpl(ExternalServicePort externalServicePort) {
         this.externalServicePort = externalServicePort;
     }
 
